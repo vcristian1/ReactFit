@@ -9,7 +9,8 @@ type Props = {
 
 const Link = ({ page, selectedPage, setSelectedPage }: Props) => {
 // lowerCasePage is equal to the name of the page prop passed in but its lower cased with all spaces removed so the id is #pagename for the anchor link to work
-  const lowerCasePage = page.toLowerCase().replace(/ /g, "")
+// Typescript doesnt know we lower cased this and replaced so we need to write the keyword as SelectedPage, which tells typescript to treat this as the SelectedPage.
+  const lowerCasePage = page.toLowerCase().replace(/ /g, "") as SelectedPage
 
   return (
     <AnchorLink
