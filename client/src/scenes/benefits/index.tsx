@@ -92,7 +92,11 @@ const Benefits = ({ setSelectedPage }: Props) => {
                     {/* TITLE HERE */}
                     <div className='relative'>
                         <div className='before:asolute before:-top-20 before:-left-20 before:z-[-1] before:content-abstractwaves'>
-
+                            <div>
+                                <HText>MILLIONS OF HAPPY MEMBERS GETTING{" "}
+                                <span className='text-primary-500'>FIT</span>
+                                </HText>
+                            </div>
                         </div>
                     </div>
 
