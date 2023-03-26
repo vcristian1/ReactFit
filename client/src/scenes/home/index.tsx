@@ -1,10 +1,10 @@
 import useMediaQuery from "../../hooks/useMediaQuery";
 import ActionButton from "../../shared/ActionButton";
 import HomePageText from "../../assets/HomePageText.png";
-import HomePageGraphic from "../../assets/HomePageText.png";
-import SponsorRedbull from "../../assets/HomePageText.png";
-import SponsorForbes from "../../assets/HomePageText.png";
-import SponsorFortune from "../../assets/HomePageText.png";
+import HomePageGraphic from "../../assets/HomePageGraphic.png";
+import SponsorRedbull from "../../assets/SponsorRedbull.png";
+import SponsorForbes from "../../assets/SponsorForbes.png";
+import SponsorFortune from "../../assets/SponsorFortune.png";
 import { SelectedPage } from '../../shared/types';
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
@@ -53,8 +53,8 @@ const Home = ({ setSelectedPage }: Props) => {
                     </AnchorLink>
                 </div>
             </div>
-
             {/* Image Here */}
+                <img src={HomePageGraphic} alt="home-page-graphic" />
             <div>
 
             </div>
