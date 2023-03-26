@@ -4,6 +4,24 @@ import { HomeModernIcon, UserGroupIcon, AcademicCapIcon } from "@heroicons/react
 import { motion } from 'framer-motion';
 import HText from '../../shared/HText';
 
+const benefits = [
+    {
+        icon: <HomeModernIcon className='h-6 w-6' />,
+        title: "State of the Art Facilities",
+        description: "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
+    },
+    {
+        icon: <UserGroupIcon className='h-6 w-6' />,
+        title: "100's of Diverse Classes",
+        description: "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
+    },
+    {
+        icon: <AcademicCapIcon className='h-6 w-6' />,
+        title: "Expert and Pro Trainers",
+        description: "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
+    },
+]
+
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
 }
@@ -32,7 +50,15 @@ const Benefits = ({ setSelectedPage }: Props) => {
 
             {/* BENEFITS HERE */}
             <div className='mt-5 items-center  justify-between gap-8 md:flex'>
-
+                {benefits.map((benefit) => (
+                    <Benefit 
+                     key={benefit.title}
+                     icon={benefit.icon}
+                     title={benefit.title}
+                     description={benefit.description}
+                     setSelectedPage={setSelectedPage}
+                    />
+                ))}
             </div>
         </motion.div>
     </section>
