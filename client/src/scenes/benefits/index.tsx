@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import HText from '../../shared/HText';
 import Benefit from './Benefit';
 import ActionButton from '../../shared/ActionButton';
+import BenefitsPageGraphic from '../../assets/BenefitsPageGraphic.png';
 
 // Telling typescript that this is an array with a BenefitType of Object. Always make sure your objects are type'd
 const benefits: Array<BenefitType> = [
@@ -87,7 +88,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
             {/* BENEFITS GRAPHICS AND DESCRIPTION HERE */}
             <div>
                 {/* GRAPHIC HERE */}
-                <img src="" alt="" />
+                <img className="mx-auto" src={BenefitsPageGraphic} alt="benefits-page-graphic" />
                 {/* DESCRIPTION HERE */}
                 <div>
                     {/* TITLE HERE */}
