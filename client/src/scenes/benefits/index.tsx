@@ -4,6 +4,7 @@ import { HomeModernIcon, UserGroupIcon, AcademicCapIcon } from "@heroicons/react
 import { motion } from 'framer-motion';
 import HText from '../../shared/HText';
 import Benefit from './Benefit';
+import ActionButton from '../../shared/ActionButton';
 
 // Telling typescript that this is an array with a BenefitType of Object. Always make sure your objects are type'd
 const benefits: Array<BenefitType> = [
@@ -117,10 +118,13 @@ const Benefits = ({ setSelectedPage }: Props) => {
                             enim mattis odio in risus nunc.
                         </p>
                     </div>
-                    {/* BUTTON HERE */}
-                    <div className='relative mt-16'>
-                        <div className='before:absolute before:-bottom-20 before:right-40 before:z-[-1] before: content-sparkles'>
 
+                    {/* BUTTON HERE */}
+                    <div className="relative mt-16">
+                        <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
+                            <ActionButton setSelectedPage={setSelectedPage}>
+                            Join Now
+                            </ActionButton>
                         </div>
                     </div>
                 </div>                
