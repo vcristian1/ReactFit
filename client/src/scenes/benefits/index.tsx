@@ -35,12 +35,19 @@ const Benefits = ({ setSelectedPage }: Props) => {
      className='mx-auto min-h-full w-5/6 py-20'
     >
         <motion.div 
-         className="md:flex mx-auto w-5/6 items-center justify-center md:h-5/6"
          onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
         >
             {/* HEADER HERE */}
-            <div
+            <motion.div
              className='md:my-5 md:w-3/5'
+             initial="hidden"
+             whileInView="visible"
+             viewport={{ once: true, amount: 0.5 }}
+             transition={{ duration: 0.5 }}
+             variants={{
+               hidden: { opacity: 0, x: -50 },
+               visible: { opacity: 1, x: 0 },
+             }}
             >
                 <HText>MORE THAN JUST A GYM</HText>
                 <p className="my-5 text-sm">
@@ -48,10 +55,19 @@ const Benefits = ({ setSelectedPage }: Props) => {
                     get you to your ultimate fitness goals with ease. We provide true
                     care into each and every member.
                 </p>
-            </div>
+            </motion.div>
 
             {/* BENEFITS HERE */}
-            <div className='mt-5 items-center  justify-between gap-8 md:flex'>
+            <motion.div 
+             className='mt-5 items-center  justify-between gap-8 md:flex'
+             initial="hidden"
+             whileInView="visible"
+             viewport={{ once: true, amount: 0.5 }}
+             variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}             
+            >
                 {benefits.map((benefit: BenefitType) => (
                     <Benefit 
                      key={benefit.title}
@@ -61,7 +77,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                      setSelectedPage={setSelectedPage}
                     />
                 ))}
-            </div>
+            </motion.div>
         </motion.div>
     </section>
   )
