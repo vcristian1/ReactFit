@@ -118,7 +118,11 @@ const Benefits = ({ setSelectedPage }: Props) => {
                         </p>
                     </div>
                     {/* BUTTON HERE */}
+                    <div className='relative mt-16'>
+                        <div className='before:absolute before:-bottom-20 before:right-40 before:z-[-1] before: content-sparkles'>
 
+                        </div>
+                    </div>
                 </div>                
             </div>
         </motion.div>
