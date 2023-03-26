@@ -21,7 +21,7 @@ const Home = ({ setSelectedPage }: Props) => {
      className="gap -16 bg-gray-20 py-10 md:h-full"
     >
         {/* Image and Main Header Here */}
-        <div>
+        <div className="md:flex mx-auto w-5/6 items-center justify-center md:h-5/6">
             {/* Main Header Here */}
             <div>
                 {/* Headings Here */}
