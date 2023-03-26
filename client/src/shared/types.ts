@@ -10,3 +10,9 @@ export enum SelectedPage {
     title: string;
     description: string;
   }
+
+  export interface ClassesType {
+    image: JSX.Element;
+    name: string;
+    description: string;
+  }

@@ -5,6 +5,8 @@ import image3 from "../../assets/image3.png";
 import image4 from "../../assets/image4.png";
 import image5 from "../../assets/image5.png";
 import image6 from "../../assets/image6.png";
+import { motion } from "framer-motion";
+import HText from "../../shared/HText";
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
@@ -12,8 +14,13 @@ type Props = {
 
 const OurClasses = ({ setSelectedPage }: Props) => {
   return (
-    <div>OurClasses</div>
-  )
+
+  <section id="ourclasses" className="w-full bg-primary-100 py-40">
+    <motion.div>
+
+    </motion.div>
+  </section>  
+)
 }
 
 export default OurClasses
