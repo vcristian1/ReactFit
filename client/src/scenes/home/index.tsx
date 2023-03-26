@@ -23,9 +23,9 @@ const Home = ({ setSelectedPage }: Props) => {
         {/* Image and Main Header Here */}
         <div className="md:flex mx-auto w-5/6 items-center justify-center md:h-5/6">
             {/* Main Header Here */}
-            <div>
+            <div className="z-10 mt-32 md:basis-3/5">
                 {/* Headings Here */}
-                <div>
+                <div className="md:-mt-20">
                     <div>
                         <div>
                             <img src={HomePageText} alt="home-page-text" />
