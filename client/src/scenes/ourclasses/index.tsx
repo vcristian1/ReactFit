@@ -7,7 +7,7 @@ import image5 from "../../assets/image5.png";
 import image6 from "../../assets/image6.png";
 import { motion } from "framer-motion";
 import HText from "../../shared/HText";
-import Class from "../ourclasses/Class";
+import Class from "./Class";
 
 
 const classes: Array<ClassType> = [
@@ -83,10 +83,10 @@ const OurClasses = ({ setSelectedPage }: Props) => {
         <ul className="w-[2800px] whitespace-nowrap">
           {classes.map((item: ClassType, index) => (
             <Class 
-             name={item.name} 
-             description={item.description}
-             image={item.image}
-             key={item.name}
+            key={`${item.name}-${index}`}
+            name={item.name}
+            description={item.description}
+            image={item.image}
             />
           ))}
         </ul>
