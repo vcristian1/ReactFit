@@ -11,8 +11,8 @@ export enum SelectedPage {
     description: string;
   }
 
-  export interface ClassesType {
-    image: JSX.Element;
+  export interface ClassType {
     name: string;
-    description: string;
+    description?: string;
+    image: string;
   }
