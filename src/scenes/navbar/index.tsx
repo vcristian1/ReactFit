@@ -41,7 +41,6 @@ const Navbar = ({  isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                         </div>
                         {/* Inner Right Side (Sign In and Become a Member buttons)*/}
                         <div className={`${flexBetween} gap-2 text-sm`}>
-                            <button>Sign In</button>
                             <ActionButton setSelectedPage={setSelectedPage}>Become a Member</ActionButton>
                         </div>
                     </div>
