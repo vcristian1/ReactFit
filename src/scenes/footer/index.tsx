@@ -1,5 +1,5 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/Logo.png";
 import { SelectedPage } from "../../shared/types";
 
 type Props = {
